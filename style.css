@@ -80,3 +80,16 @@ html {
 .reading_i--3:before {
     content: 'Front right';
 }
+
+@media screen and (min-width: 767px){
+  .reading_i > div {
+    font-size: 2.5em;
+}
+.reading_avg, .reading_i > div {
+    padding: 0.5em 0;
+}
+  .reading_i > div:before {
+   
+    padding: 2em 0 1em 0;
+  }
+}
