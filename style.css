@@ -1,4 +1,82 @@
-// STYLES
-body {
-  background: red;
+@import url('https://fonts.googleapis.com/css2?family=Kdam+Thmor+Pro&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Lato:wght@3800&display=swap');
+html {
+  background: #00032a;
+  color: #dedede;
+  font-family: 'Kdam Thmor Pro', sans-serif;
+  text-align: center;
+}
+.main:before {
+    content: '🐢 Timometer';
+    padding: 0.8em 0 0.3em 0;
+  font-family: 'Kdam Thmor Pro', sans-serif;
+    display: block;
+    font-size: 3em;
+    font-weight: bold;
+    color: #81be70;
+    text-shadow: 0 0 1px rgb(243 243 243 / 7%);
+}
+*:before, *:after {
+    font-family: 'Lato', sans-serif;
+    font-size: 0.6em;
+    color: #9d9d9d;
+    vertical-align: top;
+    line-height: 100%;
+    font-weight:bold;
+}
+
+.reading_avg, .reading_i > div {
+    display: flex;
+    flex-wrap: wrap;
+    align-items: center;
+    justify-content: space-around;
+    font-size: 3em;
+    padding: 1.1em 0;
+}
+
+.reading_i_temp:after, .reading_avg_temp:after {
+    content: '•';
+}
+
+.reading_i_hum:after, .reading_avg_hum:after {
+    content: '%';
+    font-size: 0.3em;
+    font-weight: bold;
+    line-height: 2.5em;
+}
+
+.reading_avg:before {content: 'Average';flex-basis: 100%;text-transform: uppercase;font-size: 12px;font-weight: 800;}
+
+.reading_i {
+    display: flex;
+    flex-wrap: wrap;
+    height: 50vh;
+}
+
+.reading_i > div {
+    flex-basis: 50%;
+    font-size: 1em;
+    height: fit-content;
+}
+
+.reading_i > div:before {
+    flex-basis: 100%;
+    padding: 3em 0 2em 0;
+    text-transform: uppercase;
+}
+
+.reading_i--0:before {
+    content: 'Back left';
+}
+
+.reading_i--1:before {
+    content: 'Back right';
+}
+
+.reading_i--2:before {
+    content: 'Front left';
+}
+
+.reading_i--3:before {
+    content: 'Front right';
 }
