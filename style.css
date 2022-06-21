@@ -1,7 +1,9 @@
 @import url('https://fonts.googleapis.com/css2?family=Kdam+Thmor+Pro&display=swap');
 @import url('https://fonts.googleapis.com/css2?family=Lato:wght@3800&display=swap');
 html {
-  background: #00032a;
+  background: linear-gradient(to bottom, #141e30, #243b55);
+  height: 100%;
+  overflow: hidden;
   color: #dedede;
   font-family: 'Kdam Thmor Pro', sans-serif;
   text-align: center;
